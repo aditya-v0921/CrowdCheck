@@ -384,7 +384,7 @@ def open_camera(source):
             if cap.isOpened():
                 ret, _ = cap.read()
                 if ret:
-                    print(f"  ✓ Found camera at index {i}")
+                    print(f"  Found camera at index {i}")
                     source = i
                     cap.release()
                     break
